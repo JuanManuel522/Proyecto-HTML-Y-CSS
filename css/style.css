@@ -1,0 +1,260 @@
+*{
+    font-family: "Encode Sans", sans-serif;
+}
+
+.contenedor_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    p{
+        margin-left: 0.5rem;
+        font-size: 1.3rem;
+        width: 11rem;
+    }
+    h1{
+        margin-left: 0.5rem;
+        font-size: 1.8rem;
+        width: 210px
+    }
+}
+
+.foto{
+    margin-top: 2.5rem;
+    margin-left: 90%;
+    position: absolute;
+    right: 10px;
+}
+
+.contenedor_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    height: 7vh;
+    margin-left: 0.5rem;
+}
+
+:root {
+    --bg: #F0F0F0;
+    --input-bg: white;
+    --text: #272829;
+    --item-hover: #f6f6f6;
+}
+
+
+/*body{
+    background: var(--bg);
+    display: flex;
+    padding-top: 4rem;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}*/
+
+.search-box{
+    background: var(--input-bg);
+    border-radius: 0,5;
+    padding: 0.75rem;
+    max-width: 20rem;
+    height: fit-content;
+    width: 120%;
+    box-shadow: 
+        rgb(149, 157, 165, 0.2)
+        0px 0px 24px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+input{
+    flex: 1;
+    max-height: 2.5rem;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.serch-box svg{
+    stroke: var(--text);
+}
+
+.results {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.results ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.25rem;
+}
+
+.results ul li{
+    list-style: none;
+    border-radius: 0.25rem;
+    padding: 1rem 0.75rem;
+}
+
+.results ul li:hover {
+    background: var(--item-hover);
+    border-radius: 0.25rem;
+}
+
+.filtro{
+    position: absolute;
+    right: 6px;
+}
+
+.container_3{
+    gap: 1.3rem;
+    margin-left: 0.5rem;
+    width: 92%;
+    height: 6vh;
+    overflow:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2vh;
+    position: absolute;
+}
+
+.container_3::-webkit-scrollbar {
+    display: none;    
+  }
+
+.filtro-1{
+    border-radius:5px;
+    border: solid 1px;
+    width: 30vw;
+    height: 3vh;
+    background-color:#ffffff;
+    color:#7b7b7b;
+    padding: 4%;
+    text-decoration: none;
+    margin-top: 1vh;
+    img{
+        margin-top: 0.27rem;
+        margin-left: 4vw;
+    }
+    p{
+        color: #272829;
+        margin-left: 9.6vw;
+        margin-top: -1.35rem;
+    }
+}
+
+.filtro-2{
+    border-radius:5px;
+    border: solid 1px;
+    width: 30vw;
+    height: 3vh;
+    background-color:#ffffff;
+    color:#7b7b7b;
+    padding: 4%;
+    text-decoration: none;
+    margin-top: 1vh;
+    img{
+        margin-left: 1.5rem;
+        margin-top: 0.25vh;
+    }
+    p{
+        color: #000000;
+        margin-left: 2.9rem;
+        margin-top: -1.49rem;
+    }
+}
+
+.filtro-3{
+    border-radius:5px;
+    border: solid 1px;
+    width: 30vw;
+    height: 3vh;
+    background-color:#ffffff;
+    color:#7b7b7b;
+    padding: 4%;
+    text-decoration: none;
+    margin-top: 1vh;
+    img{
+        margin-left: 1rem;
+        margin-top: 0.25vh;
+    }
+    p{
+        color: #000000;
+        margin-left: 2.6rem;
+        margin-top: -1.49rem;
+    }
+}
+
+.filtro-4{
+    border-radius:5px;
+    border: solid 1px;
+    width: 30vw;
+    height: 3vh;
+    background-color:#ffffff;
+    color:#7b7b7b;
+    padding: 4%;
+    text-decoration: none;
+    margin-top: 1vh;
+    img{
+        margin-left: 1.5rem;
+        margin-top: 0.25vh;
+    }
+    p{
+        color: #000000;
+        margin-left: 3rem;
+        margin-top: -1.49rem;
+    }
+}
+
+.productos{
+    margin-top: 12vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0.5rem;
+    gap: 1.6rem;
+    font-size: 0.6rem;
+
+    img{
+        border-radius: 10%;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    h2{
+        margin-top: -2rem;
+        left: 6rem;
+        position: absolute;
+    }
+
+}
+
+.producto-2 h2{
+    margin-top: -2rem;
+    left: 18rem;
+    position: absolute;
+}
+
+.producto-3 {
+    margin-top: -4vh;
+    h2{
+    margin-top: -2rem;
+    left: 6rem;
+    position: absolute;
+    }
+}   
+
+.producto-4 h2{
+    margin-top: -2rem;
+    left: 18rem;
+    position: absolute;
+}
