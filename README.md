@@ -12,14 +12,11 @@ Este es un proyecto web de un **e-commerce de moda** con interfaz amigable, filt
 - ⭐ Valoraciones de los productos
 - 🛒 Navegación inferior tipo app (Home, Checkout, Perfil, Likes)
 
-## 🖼️ Capturas (opcional si subís imágenes)
-> ¡Acá podés mostrar screenshots del diseño para lucirlo!
 
 ## 🧱 Tecnologías
 
 - HTML5
 - CSS3 (Grid, Flexbox, media queries)
-- JavaScript Vanilla
+- JavaScript
 
-## 📁 Estructura del proyecto
 
