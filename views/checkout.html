@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="/css/checkout.css">
+</head>
+<body>
+  <div class="checkout-contenedor">
+    <header class="checkout-header">
+      <a href="/index.html">
+      <button class="boton-atras">&#8592;</button>
+      </a>
+      <h1>Checkout</h1>
+    </header>
+
+    <section class="lista-productos">
+      <div class="product-item">
+        <img src="/storage/img/producto-1.png" alt="Product Image">
+        <div class="producto-info">
+          <h2>Modern light clothes</h2>
+          <p>Dress modern</p>
+          <span class="precio">$212.99</span>
+        </div>
+        <div class="quantity">
+          <button>-</button>
+          <span>4</span>
+          <button>+</button>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <img src="/storage/img/producto-2.png" alt="Product Image">
+        <div class="product-info">
+          <h2>Modern light clothes</h2>
+          <p>Dress modern</p>
+          <span class="price">$162.99</span>
+        </div>
+        <div class="quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="shipping-info">
+      <div class="card-info">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class="visa-logo">
+        <span>**** **** **** 2143</span>
+        <span class="dropdown">&#9662;</span>
+      </div>
+    </section>
+
+    <section class="summary">
+      <div class="summary-row">
+        <span>Total (9 items)</span>
+        <span>$1,014.95</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping Fee</span>
+        <span>$0.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Discount</span>
+        <span>$0.00</span>
+      </div>
+      <div class="summary-row total">
+        <span>Sub Total</span>
+        <span>$1,014.95</span>
+      </div>
+    </section>
+
+    <button class="pay-button">Pay</button>
+  </div>
+</body>
+</html>

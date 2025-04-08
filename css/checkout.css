@@ -1,0 +1,145 @@
+* {
+    font-family: "Encode Sans", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .checkout-contenedor {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .checkout-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .boton-atras{
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .lista-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .product-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .producto-info {
+    flex-grow: 1;
+  }
+  
+  .producto-info h2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .producto-info p {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .product0-info .precio {
+    font-weight: bold;
+    color: #111;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity button {
+    border: none;
+    background: #eee;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .shipping-info {
+    margin-top: 25px;
+    background: #f0f1f4;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .visa-logo {
+    width: 50px;
+  }
+  
+  .dropdown {
+    font-size: 20px;
+  }
+  
+  .summary {
+    margin-top: 20px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+  
+  .summary-row.total {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .pay-button {
+  
+    width: 100%;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  

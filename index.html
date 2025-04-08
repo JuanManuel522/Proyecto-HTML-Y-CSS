@@ -10,14 +10,14 @@
     <title>Document</title>
 </head>
 <body>
-    <section></section>
+    <section>
         <div class="contenedor_1">
             <div class="texto">
                 <p>Hello, Welcome 👋</p>
                 <h1>Albert Stevano</h1>
             </div>
             <div class="foto">
-                <img class="foto_peril" src="storage/img/foto_perfil.png" width="50px">
+                <img src="storage/img/foto_perfil.png" width="50px">
             </div>
         </div>
     </section>  
@@ -27,7 +27,7 @@
             <div class="row">
                 <input
                     type="text" class="search-bar"
-                    placeholder="search for a country..."
+                    placeholder="Search For A Products"
                     autocomplete="off"
                 >
                 <button>
@@ -36,75 +36,110 @@
             </div>
             <div class="results"></div>
         </div>
-        <script src="script.js"></script>
         <div class="filtro">
-            <img class="filtro" src="storage/img/filtro.png">
+            <img src="storage/img/filtro.png">
         </div>
     </section>
     <section>
-        <div class="container_3">
-            <a class="filtro-1">
-                <img src="storage/img/categoria-1.svg" width="15px"  href="#">
-                <p>All Items</p>
-                </a>
-                <a class="filtro-2">
-                <img src="storage/img/categoria-2.svg" width="20px"  href="#">
-                <p>Dress</p>
-                </a>
-                <a class="filtro-3">
-                <img src="storage/img/categoria-3.svg" width="20px"  href="#">
-                <p>T-Shirt</p>
-                </a>
-                <a class="filtro-4">
-                <img src="storage/img/categoria-4.svg" width="20px"  href="#">
-                <p>Jeans</p>
-                </a>
-        </div>
-    </section>
+        <div class="contenedor_3">
+                <div class="filtro-1" onclick="filtrarProductos('All')">
+                    <a href="#">
+                        <img src="storage/img/categoria-1.svg" width="15px">
+                        <p>All Items</p>
+                    </a>
+                </div>
+                <div class="filtro-2" onclick="filtrarProductos('Dress')">
+                    <a href="#">
+                        <img src="storage/img/categoria-2.svg" width="20px">
+                        <p>Dress</p>
+                    </a>
+                </div>
+                <div class="filtro-3" onclick="filtrarProductos('T-Shirt')">
+                    <a href="#">
+                        <img src="storage/img/categoria-3.svg" width="20px">
+                        <p>T-Shirt</p>
+                    </a>
+                </div>
+                <div class="filtro-4" onclick="filtrarProductos('Shoes')">
+                    <a href="#">
+                        <img src="storage/img/categoria-4.svg" width="20px">
+                        <p>Shoes</p>
+                    </a>
+                </div>
+             </div>
+        </section>
     <section>
         <div class="productos">
             <div class="producto-1">
-            <img src="storage/img/producto-1.png" width="150px">
-            <h1>Modern Light Clothes</h1>
-            <p>T-Shirt</p>
-            <h1>$212.99</h1>
-            <h2>&#11088; 5.0</h2>
+                <div class="producto" data-category="Shoes" data-nombre="Nike Ice For One">
+                    <a href="">
+                        <img src="storage/img/producto-1.png" width="170px">
+                        <h1>Nike Ice For One</h1>
+                        <p>Shoes</p>
+                        <h1>$212.99</h1>
+                        <h2>&#11088; 5.0</h2>
+                    </a>
+                </div>
             </div>
             <div class="producto-2">
-            <img src="storage/img/producto-2.png" width="150px">
-            <h1>Light Dress Bless</h1>
-            <p>Dress modern</p>
-            <h1>$162.99</h1>
-            <h2>&#11088; 5.0</h2>
+                <div class="producto" data-category="Dress" data-nombre="Dress Hugo Boss">
+                    <a href="#">
+                        <img src="storage/img/producto-2.png" width="170px">
+                        <h1>Dress Hugo Boss</h1>
+                        <p>Dress</p>
+                        <h1>$1000</h1>
+                        <h2>&#11088; 5.0</h2>
+                    </a>
+                </div>
             </div>
             <div class="producto-3">
-            <img src="storage/img/producto-3.png" width="150px">
-            <h1>Light Dress Bless</h1>
-            <p>Dress modern</p>
-            <h1>$162.99</h1>
-            <h2>&#11088; 5.0</h2>
+                <div class="producto" data-category="T-Shirt" data-nombre="T-Shirt Fendi">
+                    <a href="">
+                        <img src="storage/img/producto-3.png" width="170px">
+                        <h1>T-Shirt Fendi</h1>
+                        <p>T-shirt</p>
+                        <h1>$162.99</h1>
+                        <h2>&#11088; 5.0</h2>
+                    </a>
+                </div>
             </div>
             <div class="producto-4">
-            <img src="storage/img/producto-4.png" width="150px">
-            <h1>Light Dress Bless</h1>
-            <p>Dress modern</p>
-            <h1>$162.99</h1>
-            <h2>&#11088; 5.0</h2>
+                <div class="producto" data-category="Dress" data-nombre="Dress Christian Dior">
+                    <a href="">
+                        <img src="storage/img/producto-4.png" width="170px">
+                        <h1>Dress Christian Dior </h1>
+                        <p>Dress</p>
+                        <h1>$100.99</h1>
+                        <h2>&#11088; 5.0</h2>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <!--<section>
-        <div clas="navegador">
-            <nav>
-                <ul>
-                    <ul><a class="inicio"><img src="storage/img/inicio.svg" width="40px"></a>
-                </ul>
-                    <ul></ul>
-                    <ul></ul>
-                    <ul></ul>
-                </ul>
-            </nav>
+    <section>
+        <div class="navegador">
+            <div>
+                <a href="/index.html">
+                    <img src="storage/img/casa.png">
+                </a>
+            </div>
+            <div>
+                <a href="/views/checkout.html">
+                    <img src="storage/img/compras.png">
+                </a>
+            </div>
+            <div>
+                <a href="/views/detail.html">
+                    <img src="storage/img/perfil.png">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="storage/img/me-gusta.png" alt="">
+                </a>
+            </div>
         </div>
-    </section>-->
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>
